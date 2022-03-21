@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gender">
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="277dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="76dp"
+        android:text="Choose Your Gender "
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/boy"
+        android:layout_width="199dp"
+        android:layout_height="162dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="76dp"
+        android:onClick="abc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gender"
+        app:srcCompat="@drawable/boy" />
+    <ImageView
+        android:id="@+id/girl"
+        android:layout_width="199dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="76dp"
+        android:onClick="abc1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boy"
+        app:srcCompat="@drawable/girl" />
+
+    <TextView
+        android:id="@+id/m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="274dp"
+        android:layout_marginEnd="59dp"
+        android:text="Male"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/boy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="56dp"
+        android:text="Female"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/girl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m" />
+</androidx.constraintlayout.widget.ConstraintLayout>
